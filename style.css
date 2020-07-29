@@ -98,6 +98,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 2px 30px -15px hsl(192, 100%, 9%);
 }
 .Started__btn p{
     color: hsl(193, 100%, 96%);
@@ -105,4 +106,103 @@ header{
 }
 .header__main img{
     width: 50%;
+}
+
+
+
+/* section main */
+
+.main{
+    margin: 10em 0em 10em 0em;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tile{
+    padding: 3% 2% 3% 8%;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3em;
+    box-shadow: 0px 0px 30px -20px hsl(192, 100%, 9%);
+}
+
+.tile:nth-child(even){
+    flex-direction: row;
+}
+.tile:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.tile img{
+    width: 35%;
+    height: 100%;
+}
+.tile__header{
+    width: 44%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.tile__header h1{
+    font-size: 1.5em;
+    font-weight: 700;
+    color:  hsl(192, 100%, 9%);
+    margin: 0;
+}
+.tile__header p{
+    font-size: 1.03em;
+    font-weight: 400;
+    color: hsl(208, 11%, 55%);
+}
+
+.ready{
+    position: absolute;
+    bottom: -18em;
+    width: 60%;
+    height: 15em;
+    background-color: white;
+    box-shadow: 0px 0px 30px -20px hsl(192, 100%, 9%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.ready h1{
+    font-size: 2em;
+    font-weight: 700;
+    color:  hsl(192, 100%, 9%);
+    margin: 0;
+}
+.ready__btn{
+    width: 450px;
+    height: 60px;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    box-shadow: 0px 2px 30px -15px hsl(192, 100%, 9%);
+}
+.ready__btn p {
+    color: hsl(193, 100%, 96%);
+    font-size: 1em;
+}
+/* footer */
+footer{
+    width: 100%;
+    background-color: hsl(192, 100%, 9%);
 }
