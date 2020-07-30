@@ -38,6 +38,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: hsl(193, 100%, 96%);
 }
 
 /* logo */
@@ -178,6 +179,7 @@ header{
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
+    z-index: 2;
 }
 
 .ready h1{
@@ -203,6 +205,84 @@ header{
 }
 /* footer */
 footer{
+    position: relative;
     width: 100%;
     background-color: hsl(192, 100%, 9%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 10em;
+    padding-bottom: 8em;
+}
+.left{
+    width: 30%;
+    height: 100%;
+    color: hsl(193, 100%, 96%);
+}
+.left__logo{
+    width: 50%;
+    z-index: 2000;
+    color: white;
+}
+.left div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.left div img{
+    width: 1em;
+    height: 1em;
+    margin-right: 1em;
+}
+
+
+
+.mid{
+    position: relative;
+    left: 6em;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: hsl(193, 100%, 96%);
+}
+.mid div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.right{
+    position: relative;
+    top: 3em;
+    left: 8em;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.right div img{
+    width: 20px;
+    height: 20px;
+    border: 1px solid hsl(193, 100%, 96%);
+    border-radius: 100px;
+    padding: 0.4em;
+    margin: 0.3em;
+}
+
+.copyRight{
+    position: absolute;
+    bottom: 4em;
+    right: 12em;
+    font-size: 0.6em;
+    color: hsl(193, 100%, 96%);
 }
